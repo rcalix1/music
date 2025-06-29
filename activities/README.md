@@ -106,6 +106,9 @@ This README helps organize all active and long-term hobbies into a practical wee
 
 This document summarizes four strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
 
+![Projects Diagram](projects_diagram.png)
+
+
 ---
 
 ## 🥇 Project 1: Preference-Based Time Series GPTs
