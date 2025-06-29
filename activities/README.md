@@ -237,6 +237,6 @@ This document summarizes four strategically aligned research projects, grounded 
 
 ---
 
-Each project here represents a scalable, novel direction that integrates foundational ideas from current AI research leaders (LeCun, Ilya, Karpathy, Hassabis) with Ricardo's domain expertise and hands-on access to real-world systems.
+
 
 
