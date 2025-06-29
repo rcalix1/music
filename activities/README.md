@@ -102,7 +102,7 @@ This README helps organize all active and long-term hobbies into a practical wee
 
 ---
 
-# Ricardo Calix – AI Research Portfolio README
+# AI Research Portfolio README
 
 This document summarizes four strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
 
