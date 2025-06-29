@@ -192,7 +192,7 @@ This document summarizes four strategically aligned research projects, grounded 
   [arXiv:2309.11498](https://arxiv.org/abs/2309.11498)
 
 * *“RLAIF: Reinforcement Learning from AI Feedback”* by Bai et al. (Anthropic, 2023)
-  [arXiv:2307.15217](https://arxiv.org/abs/2307.15217)
+  [[arXiv:2307.15217](https://arxiv.org/abs/2307.15217)](https://cameronrwolfe.substack.com/p/rlaif-reinforcement-learning-from)
 
 ### Goals
 
