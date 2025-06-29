@@ -217,8 +217,8 @@ This document summarizes four strategically aligned research projects, grounded 
 * *“A Path Towards Autonomous Machine Intelligence”* by Yann LeCun (Meta, 2022)
   [https://openreview.net/forum?id=BZ5a1r-kVsf](https://openreview.net/forum?id=BZ5a1r-kVsf)
 
-* *“I-JEPA: Self-Supervised Learning of Joint Embedding Predictive Architectures”* by Assran et al. (Meta, 2023)
-  [arXiv:2306.06162](https://arxiv.org/abs/2306.06162)
+* *“I-JEPA: Self-Supervised Learning of Joint Embedding Predictive Architectures” Mohamed, Assran, Caron, Misra, et al. (Meta AI, 2023)
+[arXiv:2306.06162](https://arxiv.org/abs/2301.08243)
 
 * *“The Free Energy Principle: A Unified Brain Theory?”* by Karl Friston (2010)
   [https://www.nature.com/articles/nn.2731](https://www.nature.com/articles/nn.2731)
