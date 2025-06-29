@@ -98,5 +98,145 @@ This README helps organize all active and long-term hobbies into a practical wee
 
 ---
 
-> ✨ *You're building more than projects. You're building a lifestyle of creativity and curiosity.*  
+> ✨ *You're building more than projects. You're building a lifestyle of creativity and curiosity.*
+
+---
+
+# Ricardo Calix – AI Research Portfolio README
+
+This document summarizes four strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
+
+---
+
+## 🥇 Project 1: Preference-Based Time Series GPTs
+
+**Theme**: Fine-tune GPT-style models for time series forecasting using preference-based methods instead of traditional supervision.
+
+### Key Concepts
+
+* **DPO** (Direct Preference Optimization)
+* **GRPO** (Gradient Reward Preference Optimization)
+* **SPO** (Score-based Preference Optimization – proposed)
+* Preference signals from score metrics (R^2, RMSE) or human annotations
+
+### Applications
+
+* Blast furnace silicon prediction
+* UCI Appliances Energy dataset
+
+### Inspirations
+
+* *“Direct Preference Optimization: Your Language Model is Secretly a Reward Model”* by Rafailov et al. (2023)
+  [arXiv:2305.18290](https://arxiv.org/abs/2305.18290)
+
+* *“RLHF: Reinforcement Learning with Human Feedback”* (OpenAI summary + implementation base)
+  [https://huggingface.co/blog/rlhf](https://huggingface.co/blog/rlhf)
+
+### Goals
+
+* Replace labeled regression losses with preference-based loops
+* Fine-tune GPTs with human or score-derived preferences
+* Extend to self-refining loops with critic models (see Project 3)
+
+---
+
+## 🛫 Project 2: Sim2Real Flight Agents for Autonomous Control
+
+**Theme**: Extend prior RL-based autopilot research using simulation (X-Plane 11) into modern, preference-aware agents deployable to physical RC aircraft.
+
+### Key Concepts
+
+* Simulation-to-reality transfer (Sim2Real)
+* Curriculum learning + preference signals
+* GameNGen-style evaluation environments
+
+### Hardware + Simulation
+
+* X-Plane 11 (used in prior publications)
+* RC planes with onboard electronics
+
+### Inspirations
+
+* *“Dreamer: Scalable Reinforcement Learning with World Models”* by Hafner et al. (2020)
+  [arXiv:1912.01603](https://arxiv.org/abs/1912.01603)
+
+* *GameNGen: General Game Engine for Curriculum RL Training* ([https://gamengen.github.io](https://gamengen.github.io))
+
+* *“Curriculum Learning”* by Bengio et al. (2009)
+  [https://proceedings.neurips.cc/paper/2009/file/cb79f4eec9b93fbd5c0d0eafc500d6fa-Paper.pdf](https://proceedings.neurips.cc/paper/2009/file/cb79f4eec9b93fbd5c0d0eafc500d6fa-Paper.pdf)
+
+### Goals
+
+* Rebuild flight agents in Gym-like environment
+* Incorporate preference scores or critiques for flight behaviors
+* Transfer to RC hardware with modular policy design
+
+---
+
+## 🤖 Project 3: Forecast Critique and Correction Loop
+
+**Theme**: Pair a forecasting GPT with a learned Critic that scores the forecast’s quality (e.g., plausibility, expected RMSE), enabling revision and self-correction.
+
+### Key Concepts
+
+* Self-rating and self-improving models
+* Critic model trained from score metrics
+* Optional forecast refinement step
+
+### Inspirations
+
+* *“Self-Refine: Iterative Refinement with Self-Feedback”* by Madaan et al. (2023)
+  [arXiv:2303.17651](https://arxiv.org/abs/2303.17651)
+
+* *“Chain-of-Critique Reduces Hallucination in Large Language Models”* by Liu et al. (2023)
+  [arXiv:2309.11498](https://arxiv.org/abs/2309.11498)
+
+* *“RLAIF: Reinforcement Learning from AI Feedback”* by Bai et al. (Anthropic, 2023)
+  [arXiv:2307.15217](https://arxiv.org/abs/2307.15217)
+
+### Goals
+
+* Create a GPT-based forecasting system with feedback loop
+* Train a Critic model to evaluate or flag poor forecasts
+* Enable auto-revision or ranking of outputs
+
+---
+
+## 🌍 Project 4: JEPA-Style World Modeling with Friston Energy
+
+**Theme**: Learn latent world dynamics from time series using joint embedding predictive architectures (JEPA) and variational free energy principles.
+
+### Key Concepts
+
+* Latent state prediction instead of token/label prediction
+* Contrastive learning, predictive embeddings
+* Free Energy Principle (Friston) as a guiding metaphor
+
+### Inspirations
+
+* *“A Path Towards Autonomous Machine Intelligence”* by Yann LeCun (Meta, 2022)
+  [https://openreview.net/forum?id=BZ5a1r-kVsf](https://openreview.net/forum?id=BZ5a1r-kVsf)
+
+* *“I-JEPA: Self-Supervised Learning of Joint Embedding Predictive Architectures”* by Assran et al. (Meta, 2023)
+  [arXiv:2306.06162](https://arxiv.org/abs/2306.06162)
+
+* *“The Free Energy Principle: A Unified Brain Theory?”* by Karl Friston (2010)
+  [https://www.nature.com/articles/nn.2731](https://www.nature.com/articles/nn.2731)
+
+### Domains
+
+* UCI Energy Prediction dataset (Friston-aligned)
+* Blast furnace time series
+* Latent dynamics for RC plane or control logs
+
+### Goals
+
+* Predict future latent states rather than raw sensor values
+* Learn internal representations that minimize surprise
+* Move toward agents that simulate and reason with latent futures
+
+---
+
+Each project here represents a scalable, novel direction that integrates foundational ideas from current AI research leaders (LeCun, Ilya, Karpathy, Hassabis) with Ricardo's domain expertise and hands-on access to real-world systems.
+
 
