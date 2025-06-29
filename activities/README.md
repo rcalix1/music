@@ -1,4 +1,4 @@
-# 🛠️ Ricardo's Hobby Schedule & Project Tracker
+# 🛠️ Project Tracker
 
 This README helps organize all active and long-term hobbies into a practical weekly and monthly plan. It balances creative energy, technical builds, family fun, and physical health.
 
