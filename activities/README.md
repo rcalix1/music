@@ -160,14 +160,14 @@ This document summarizes four strategically aligned research projects, grounded 
 
 ### Inspirations
 
-* *“Dreamer: Scalable Reinforcement Learning with World Models”* by Hafner et al. (2020)
+* *“Dreamer: Scalable Reinforcement Learning with World Models”* by Hafner et al. (2020) https://research.google/blog/introducing-dreamer-scalable-reinforcement-learning-using-world-models/ 
   [arXiv:1912.01603](https://arxiv.org/abs/1912.01603)
 
 * *GameNGen: General Game Engine for Curriculum RL Training* ([https://gamengen.github.io](https://gamengen.github.io))
 
 * *“Curriculum Learning”* by Bengio et al. (2009)
-  [https://proceedings.neurips.cc/paper/2009/file/cb79f4eec9b93fbd5c0d0eafc500d6fa-Paper.pdf](https://proceedings.neurips.cc/paper/2009/file/cb79f4eec9b93fbd5c0d0eafc500d6fa-Paper.pdf)
-
+  https://dl.acm.org/doi/10.1145/1553374.1553380
+  
 ### Goals
 
 * Rebuild flight agents in Gym-like environment
