@@ -191,8 +191,8 @@ This document summarizes four strategically aligned research projects, grounded 
 * *“Self-Refine: Iterative Refinement with Self-Feedback”* by Madaan et al. (2023)
   [arXiv:2303.17651](https://arxiv.org/abs/2303.17651)
 
-* *“Chain-of-Critique Reduces Hallucination in Large Language Models”* by Liu et al. (2023)
-  [arXiv:2309.11498](https://arxiv.org/abs/2309.11498)
+* *“Chain-of-Verification Reduces Hallucination in Large Language Models", Shehzaad Dhuliawala, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli Celikyilmaz, Jason Weston
+  [[arXiv:2309.11498](https://arxiv.org/abs/2309.11498)](https://arxiv.org/abs/2309.11495)
 
 * *“RLAIF: Reinforcement Learning from AI Feedback”* by Bai et al. (Anthropic, 2023)
   [[arXiv:2307.15217](https://arxiv.org/abs/2307.15217)](https://cameronrwolfe.substack.com/p/rlaif-reinforcement-learning-from)
