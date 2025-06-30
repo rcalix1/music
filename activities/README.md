@@ -217,6 +217,9 @@ This document summarizes four strategically aligned research projects, grounded 
 
 ### Inspirations
 
+* *"JEPA 2"
+  https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/?utm_source=LifeAtMeta&utm_medium=Social+Media&utm_campaign=XFN
+
 * *“A Path Towards Autonomous Machine Intelligence”* by Yann LeCun (Meta, 2022)
   [https://openreview.net/forum?id=BZ5a1r-kVsf](https://openreview.net/forum?id=BZ5a1r-kVsf)
 
