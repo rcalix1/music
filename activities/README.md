@@ -132,6 +132,9 @@ This document summarizes four strategically aligned research projects, grounded 
 * *“Direct Preference Optimization: Your Language Model is Secretly a Reward Model”* by Rafailov et al. (2023)
   [arXiv:2305.18290](https://arxiv.org/abs/2305.18290)
 
+* *"DeepSeek Math"
+  https://arxiv.org/abs/2402.03300
+
 * *“RLHF: Reinforcement Learning with Human Feedback”* (OpenAI summary + implementation base)
   [https://huggingface.co/blog/rlhf](https://huggingface.co/blog/rlhf)
 
