@@ -230,7 +230,10 @@ This document summarizes four strategically aligned research projects, grounded 
 [arXiv:2306.06162](https://arxiv.org/abs/2301.08243)
 
 * *“The Free Energy Principle: A Unified Brain Theory?”* by Karl Friston (2010)
- https://www.nature.com/articles/nrn2787 
+ https://www.nature.com/articles/nrn2787
+
+* *"Energy-Based Transformers are Scalable Learners and Thinkers"
+https://energy-based-transformers.github.io
 
 ### Domains
 
