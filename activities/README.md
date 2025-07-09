@@ -170,6 +170,12 @@ This document summarizes four strategically aligned research projects, grounded 
 
 * *“Curriculum Learning”* by Bengio et al. (2009)
   https://dl.acm.org/doi/10.1145/1553374.1553380
+
+* *"CHM MAKES ALEXNET SOURCE CODE AVAILABLE TO THE PUBLIC"
+https://computerhistory.org/press-releases/chm-makes-alexnet-source-code-available-to-the-public/
+
+* *"Stable Diffusion Examples"
+https://github.com/rcalix1/LatentDiffusion/tree/main
   
 ### Goals
 
