@@ -235,6 +235,9 @@ This document summarizes four strategically aligned research projects, grounded 
 * *"Energy-Based Transformers are Scalable Learners and Thinkers"
 https://energy-based-transformers.github.io
 
+* *"Unexpectedness as a Measure of Semantic Learning"
+https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednessTransformer.pdf
+
 ### Domains
 
 * UCI Energy Prediction dataset (Friston-aligned)
