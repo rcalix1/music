@@ -269,6 +269,9 @@ https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednes
 - Veritasium’s Bell Test video + Hackaday.io entanglement projects
 - *Chain-of-Critique* (or Forecast Critique Loops) for autonomous refinement
 - GitHub repo: [The Pillar on DIYphysics](https://github.com/rcalix1/DIYphysics/tree/main/FringeDIYprojects)
+- https://github.com/rcalix1/DIYphysics/blob/main/FringeDIYprojects/entanglement.md
+- https://github.com/rcalix1/DIYphysics/blob/main/FringeDIYprojects/entanglementRadio.md
+- https://github.com/rcalix1/DIYphysics/blob/main/FringeDIYprojects/fieldSynthesizer.md
 
 ---
 
