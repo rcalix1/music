@@ -235,6 +235,57 @@ https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednes
 
 ---
 
+## 🌀 Project 4: Entanglement Radio and the Pillar – Modular Field Sensing with AI/ML Integration
+
+**Theme**: Explore speculative and experimental sensing/communication hardware—anchored in the design of *The Pillar*, a modular DIY field synthesis platform—integrated with AI/ML for signal interpretation, anomaly detection, and potential emergent behaviors. This project spans experimental physics and frontier AI.
+
+---
+
+### 🔑 Key Concepts
+
+- Modular emitter/receiver architecture (EM, acoustic, optical, entangled photon channels)
+- AI-assisted signal decoding, pattern discovery, and preference learning
+- Speculative communication: entangled spectrum hypothesis
+- Interpretability of anomalous sensor data through LLMs and critics
+
+---
+
+### 🧪 Hardware + Experimentation
+
+- **The Pillar**: Central GPU-enabled platform with modular plug-in sensors/emitters
+- **Subsystems**:
+  - Entangled photon module (DIY SPDC-based Bell test rig)
+  - EM and acoustic field generator arrays
+  - Resonant coil antennas and signal amplifiers
+  - Nvidia Orin Nano or Jetson Xavier for onboard inference
+- Designed for partially DIY construction and at-home research environments
+
+---
+
+### 📚 Inspirations
+
+- *Self-Supervised Learning with Physics Priors* (general framework)
+- *Detecting Unknown Signals with Transformers* – anomaly detection literature
+- Veritasium’s Bell Test video + Hackaday.io entanglement projects
+- *Chain-of-Critique* (or Forecast Critique Loops) for autonomous refinement
+- GitHub repo: [The Pillar on DIYphysics](https://github.com/rcalix1/DIYphysics/tree/main/FringeDIYprojects)
+
+---
+
+### 🎯 Goals
+
+- Construct and deploy a modular sensing/communication stack
+- Use ML models (e.g., time-series GPT, critics) to:
+  - Classify ambient/mixed signals
+  - Rank unexpected patterns using preference models
+  - Trigger adaptive field behavior or signal alignment
+- Evaluate speculative ideas such as communication via entangled states
+- Bridge DIY physics experimentation with generative AI interpretation loops
+
+---
+
+> This project is intentionally at the frontier of plausible science and creative engineering. The goal is to blur the line between what AI can *observe*, *reframe*, or *discover* when immersed in rich, ambiguous signal environments.
+
 
 
 
