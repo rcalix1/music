@@ -104,7 +104,7 @@ This README helps organize all active and long-term hobbies into a practical wee
 
 # AI Research Portfolio README
 
-This document summarizes four strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
+This document summarizes 3 strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
 
 ![Projects Diagram](projects_diagram.png)
 
@@ -206,6 +206,9 @@ https://github.com/rcalix1/LatentDiffusion/tree/main
 * *“RLAIF: Reinforcement Learning from AI Feedback”* by Bai et al. (Anthropic, 2023)
   [[arXiv:2307.15217](https://arxiv.org/abs/2307.15217)](https://cameronrwolfe.substack.com/p/rlaif-reinforcement-learning-from)
 
+* *"Unexpectedness as a Measure of Semantic Learning"
+https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednessTransformer.pdf
+
 ### Goals
 
 * Create a GPT-based forecasting system with feedback loop
@@ -214,39 +217,10 @@ https://github.com/rcalix1/LatentDiffusion/tree/main
 
 ---
 
-## 🌍 Project 4: JEPA-Style World Modeling with Friston Energy
-
-**Theme**: Learn latent world dynamics from time series using joint embedding predictive architectures (JEPA) and variational free energy principles.
-
-### Key Concepts
-
-* Latent state prediction instead of token/label prediction
-* Contrastive learning, predictive embeddings
-* Free Energy Principle (Friston) as a guiding metaphor
-
-### Inspirations
-
-* *"JEPA 2"
-  https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/?utm_source=LifeAtMeta&utm_medium=Social+Media&utm_campaign=XFN
-
-* *“A Path Towards Autonomous Machine Intelligence”* by Yann LeCun (Meta, 2022)
-  [https://openreview.net/forum?id=BZ5a1r-kVsf](https://openreview.net/forum?id=BZ5a1r-kVsf)
-
-* *“I-JEPA: Self-Supervised Learning of Joint Embedding Predictive Architectures” Mohamed, Assran, Caron, Misra, et al. (Meta AI, 2023)
-[arXiv:2306.06162](https://arxiv.org/abs/2301.08243)
-
-* *“The Free Energy Principle: A Unified Brain Theory?”* by Karl Friston (2010)
- https://www.nature.com/articles/nrn2787
-
-* *"Energy-Based Transformers are Scalable Learners and Thinkers"
-https://energy-based-transformers.github.io
-
-* *"Unexpectedness as a Measure of Semantic Learning"
-https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednessTransformer.pdf
 
 ### Domains
 
-* UCI Energy Prediction dataset (Friston-aligned)
+* UCI Energy Prediction dataset 
 * Blast furnace time series
 * Latent dynamics for RC plane or control logs
 
