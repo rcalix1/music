@@ -1,6 +1,6 @@
 # 🛠️ Project Tracker
 
-This README helps organize all active and long-term hobbies into a practical weekly and monthly plan. It balances creative energy, technical builds, family fun, and physical health.
+* activity tracker
 
 ---
 
@@ -88,7 +88,7 @@ This README helps organize all active and long-term hobbies into a practical wee
 
 ---
 
-## 🧠 Weekly Review Prompts
+## 🧠 Weekly Review Questions
 
 - What did I actually build this week?
 - What small thing brought joy?
@@ -96,15 +96,13 @@ This README helps organize all active and long-term hobbies into a practical wee
 - Did I spend time with my daughter in a fun/tech way?
 - Can I document something in 60 seconds of video?
 
----
 
-> ✨ *You're building more than projects. You're building a lifestyle of creativity and curiosity.*
 
 ---
 
-# AI Research Portfolio README
+# AI Research Portfolio 
 
-This document summarizes 3 strategically aligned research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
+Research projects, grounded in real systems (blast furnace, energy data, RC flight), and infused with cutting-edge AI methods (preference learning, latent modeling, self-critique, and autonomous control).
 
 ![Projects Diagram](Three_Projs.png)
 
@@ -216,6 +214,9 @@ https://github.com/rcalix1/robotics/tree/main/ornithopters/hardware/kestrel
 
 * *"Unexpectedness as a Measure of Semantic Learning"
 https://github.com/rcalix1/music/blob/main/activities/IJAITsemanticUnexpectednessTransformer.pdf
+
+* *"QWEN from scratch"
+https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3
 
 ### Goals
 
