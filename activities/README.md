@@ -176,6 +176,9 @@ https://computerhistory.org/press-releases/chm-makes-alexnet-source-code-availab
 
 * *"Stable Diffusion Examples"
 https://github.com/rcalix1/LatentDiffusion/tree/main
+
+* *"Kestrel"
+https://github.com/rcalix1/robotics/tree/main/ornithopters/hardware/kestrel
   
 ### Goals
 
