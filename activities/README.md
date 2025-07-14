@@ -161,6 +161,11 @@ This document summarizes 3 strategically aligned research projects, grounded in 
 * X-Plane 11 (used in prior publications)
 * RC planes with onboard electronics
 
+## Code
+
+* https://github.com/rcalix1/Deep-learning-ML-and-tensorflow/tree/master/ReinforcementLearning/DeepQAP/DeepQAP2.0
+* link
+
 ### Inspirations
 
 * *“Dreamer: Scalable Reinforcement Learning with World Models”* by Hafner et al. (2020) https://research.google/blog/introducing-dreamer-scalable-reinforcement-learning-using-world-models/ 
