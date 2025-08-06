@@ -297,3 +297,128 @@ Visualize results, write paper	3–4 days
 “How Secure Is Your Password Policy? A Constraint-Based Auditor Reveals the Answer”
 “Neural Password Generator as Policy Critic: Constraint Optimization for Security”
 “Learning to Game the Rules: Password Guessability under Policy Constraints”
+
+---
+
+# Neural Constraint-Based String Generation for Security: Passwords and Cryptographic Keys
+
+## Project Overview
+
+This project explores the use of neural constraint optimization to generate **structured strings** for cybersecurity applications, focusing on two use cases:
+
+1. **Passwords** — Reverse-engineer user-style passwords that meet specific policy constraints.
+2. **Cryptographic Keys** — Generate structured cryptographic strings (e.g., MD5-prone inputs, vanity Ethereum addresses) while analyzing security tradeoffs.
+
+All string outputs are generated using a learned latent vector input and a neural decoder, optimized to satisfy policy constraints and metrics such as entropy, formatting, and structure.
+
+---
+
+## Use Case 1: Password Policy Auditor
+
+### Objective
+
+Evaluate how different password policies lead to predictable or unpredictable password formats using a constraint-optimization framework.
+
+### Pipeline
+
+* **Input**: Latent vector `z`
+* **Decoder**: Transformer-style decoder to produce password strings
+* **Constraints**:
+
+  * Minimum length
+  * Regex (e.g., at least one uppercase, one number, one special char)
+  * Minimum entropy threshold
+* **Loss**: Sum of penalties for unmet constraints
+* **Optimization**: Gradient descent on `z` to minimize constraint loss
+
+### Metrics
+
+* Entropy per password
+* Levenshtein similarity to leaked password corpora (e.g., RockYou)
+* n-gram overlap or Markov likelihood (optional)
+
+### Outcome
+
+* Show that many common policies lead to **predictable patterns** (e.g., Password1!)
+* Recommend stronger constraints that increase entropy and structural unpredictability
+
+---
+
+## Use Case 2A: MD5 Collision Generator (Easy Crypto)
+
+### Objective
+
+Demonstrate how weak hash functions (e.g., MD5) can be influenced by constraint-driven input generation to produce **collidable or low-diff outputs**.
+
+### Pipeline
+
+* **Target**: Two generated strings should have MD5 hashes with **low Hamming distance**
+* **Constraints**:
+
+  * Must be valid UTF-8 strings (or printable ASCII)
+  * Optional structure: prefix, length, char mix
+  * Loss = MD5 distance + constraint penalties
+
+### Evaluation
+
+* Hamming distance between hash pairs
+* Visualize clusterability of hashes
+* Compare against random string generation baseline
+
+---
+
+## Use Case 2B: Vanity Ethereum Address Generator (Hard Crypto)
+
+### Objective
+
+Use constraint optimization to generate Ethereum private keys whose public addresses meet **vanity constraints** (e.g., start with `0xdeadbeef`)
+
+### Pipeline
+
+* **Input**: Latent vector `z` decoded into private key (hex)
+* **Transform**: Use elliptic curve to derive public address (via eth\_keys lib or web3.py)
+* **Constraints**:
+
+  * Private key must be valid (256-bit hex)
+  * Public address must match regex (e.g., `starts_with("dead")`)
+  * Optional: entropy or randomness loss
+
+### Evaluation
+
+* Success rate of vanity match
+* Entropy of generated private keys
+* Tradeoff curves: vanity constraint vs entropy loss
+
+---
+
+## Implementation Notes
+
+* No RNNs used (Transformer or MLP decoder only)
+* Use differentiable approximations of entropy, regex, etc. for backprop
+* Entire project can be run without training data (purely generative)
+* Bonus: Add GUI/Streamlit interface for interactive constraint selection
+
+---
+
+## Publishable Contributions
+
+* First unified framework for **constraint-optimized security string generation**
+* Reveals structural vulnerabilities in password and crypto-string policies
+* Blends **applied cybersecurity**, **generative modeling**, and **optimization**
+
+---
+
+## Repo Structure (Suggested)
+
+```
+/constraint-string-gen
+|-- /password_auditor
+|-- /md5_generator
+|-- /eth_vanity
+|-- /common
+    |-- decoder.py
+    |-- constraints.py
+    |-- optimizer.py
+|-- README.md
+```
+
