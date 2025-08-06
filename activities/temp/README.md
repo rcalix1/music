@@ -19,6 +19,81 @@ Bonus: Add constraints or boundary learning
 ✅ Fast, visually compelling
 ✅ Could be in applied physics + ML + PDE venues
 
+
+# Physics-Aware Denoising with Diffusion from Scratch
+
+This project uses a synthetic dataset generated from known PDEs (partial differential equations) and applies a deep learning model to recover clean physical fields from noisy versions. It builds on a custom **diffusion model from scratch**, without requiring external pretrained models or datasets.
+
+## 🔬 Project Summary
+We simulate noisy versions of physical phenomena governed by PDEs (e.g., the heat equation), and train a neural network (e.g., CNN or U-Net) to reconstruct the original, clean solution.
+
+## ✅ Key Highlights
+- **All data is synthetic**: no external datasets used
+- **Physics-informed setup**: data generated from known PDEs (e.g., heat diffusion)
+- **Uses stable diffusion from scratch**: custom-built, no pretrained models
+- **No retraining required**: pretrained scratch diffusion is adapted directly to the denoising task
+
+## 🧪 Workflow
+1. **Simulate Clean Data**
+   - Use 2D finite-difference heat equation solver
+   - Store snapshots of clean field `U_clean`
+
+2. **Corrupt with Noise**
+   - Add Gaussian noise or salt-and-pepper to get `U_noisy`
+
+3. **Train Neural Denoiser**
+   - Model: CNN or U-Net
+   - Input: `U_noisy`
+   - Output: `U_clean`
+
+4. **Compare to Baselines**
+   - Traditional smoothing: Gaussian blur, median filter
+   - Metrics: MSE, PSNR, SSIM, visual difference
+
+5. **Optional Enhancements**
+   - Add boundary condition masks
+   - Use time-aware inputs
+   - Try multiple PDEs (e.g., wave, Poisson)
+
+## 📁 Dataset
+- Shape: `64x64` 2D grids
+- Format: `.npy` or `.png`
+- Fields: `(U_noisy, U_clean)` pairs
+- Dataset size: 1000 samples (expandable)
+
+## 🧠 Model
+- **Architecture**: 3–5 layer CNN or small U-Net
+- **Loss Function**: MSE between output and `U_clean`
+
+## 📊 Evaluation
+| Method           | MSE ↓ | SSIM ↑ | PSNR ↑ |
+|------------------|-------|--------|--------|
+| Gaussian blur    |       |        |        |
+| Median filter    |       |        |        |
+| CNN/U-Net Model  |       |        |        |
+
+Visuals include:
+- Input vs. Ground Truth vs. Model Output
+- Error maps (|prediction - truth|)
+
+## 📚 Paper Outline
+1. Abstract
+2. Introduction
+3. Related Work (denoising, PDE learning)
+4. Method: simulation + training
+5. Experiments + results
+6. Discussion + conclusion
+
+## 📦 Requirements
+- Python 3.10+
+- PyTorch
+- NumPy, Matplotlib
+
+---
+
+This framework provides a lightweight but powerful bridge between PDE-based physics simulations and deep learning-based denoising. Perfect for visually compelling ML + physics experimentation.
+
+
 ---
 
 5. Multi-Agent Sim to Learn Communication
