@@ -541,3 +541,83 @@ This project extends the original work on Semantic Unexpectedness Score (SUS) fr
 - Builds directly on the 2025 paper on unexpectedness
 - Will enable future work on SUS + DPO, decoding control, and generative preference modeling
 
+
+--- 
+
+# Semantic Surprise in GPT Outputs (Fast Version)
+
+## Project Title
+**Measuring Semantic Surprise in GPT Outputs: A Lightweight Study Using Mistral**
+
+## Overview
+This standalone project implements a minimal and fast validation of the Semantic Unexpectedness Score (SUS) using a pre-trained decoder-only language model (e.g., Mistral 7B or GPT-2). It avoids training or fine-tuning and instead focuses on measuring entropy-based surprise in generated text. The goal is to produce a publishable result within 1–2 weeks.
+
+## Objectives
+- Use pre-trained LLM (no training) to generate English responses to prompts
+- Compute SUS using output token probabilities
+- Analyze whether high-SUS outputs correlate with greater semantic richness
+- Demonstrate SUS as a viable metric for evaluating language generation
+
+## Model
+- Recommended: **Mistral 7B** (quantized via Ollama or HuggingFace)
+- Alternatives: GPT-2, TinyLLaMA, or any decoder-only LLM with access to logits
+
+## Dataset
+Use a small, curated prompt set (10–50 prompts):
+- XSum headlines
+- Wikipedia intros
+- Reddit thread starters
+- Hand-crafted prompts like:
+  - "Describe your most vivid memory."
+  - "What happens after the end of the world?"
+
+## Generation Procedure
+For each prompt, generate 3–5 outputs using decoding variants:
+- Greedy
+- Top-k (k=5, 10, 20)
+- Top-p (p=0.9)
+
+## SUS Metric
+For each generated sentence:
+1. Extract log-probabilities or softmax probabilities per token
+2. Compute:
+   ```python
+   SUS = (1/N) * sum(-log(p_i))
+   ```
+3. Optionally normalize by `log(vocab_size)` to get relative surprise
+
+## Analysis
+- Rank outputs by SUS
+- Perform qualitative comparison:
+  - Are high-SUS outputs more novel, semantically rich, or creative?
+- Provide 5–10 examples with human commentary
+
+## Deliverables
+- Python notebook or script
+- CSV/JSON with: prompt, decoding type, output, SUS
+- Short writeup with observations and examples
+
+## Key Contributions
+- No training required — plug-and-play with public models
+- Introduces SUS as a general-purpose semantic surprise metric
+- Opens path for SUS-based reranking, filtering, or reward shaping
+
+## Publication Targets
+- arXiv (immediate)
+- ACL/NeurIPS/ICLR workshops
+- IEEE Access or IJAIT (as a follow-up)
+
+## Project Timeline
+- Day 1–2: Script setup, prompt selection
+- Day 3–5: Run generation and compute SUS
+- Day 6–7: Analyze and write results
+- Day 8–10: Format and submit
+
+## Status
+- [ ] Prompt list ready
+- [ ] Decoding outputs collected
+- [ ] SUS calculated
+- [ ] Results analyzed
+- [ ] Manuscript drafted
+
+
