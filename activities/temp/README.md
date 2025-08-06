@@ -129,6 +129,116 @@ Visualize t-SNE or PCA embeddings + similarity matrix
 ✅ Fast, novel use case
 ✅ Publishable in applied vision or digital humanities/forensics
 
+
+
+# Brushstroke Similarity Scoring via Vision Embeddings
+
+## Overview
+
+This project explores a novel method for quantifying stylistic similarity between paintings by analyzing brushstroke texture using self-supervised vision embeddings. Rather than focusing on content, composition, or signature, we train a model to learn the *style identity* of painters, particularly the brushstroke characteristics that are hard to forge.
+
+By using contrastive learning with models like CLIP or DINOv2, we embed full or cropped images of paintings and train the system to recognize stylistic similarity between works by the same artist (e.g., Louis Ritman) and distinguish them from others.
+
+---
+
+## Goal
+
+Train a vision-based model to:
+
+* Identify stylistic consistency across paintings by the same artist
+* Compute a **brushstroke similarity score** between unknown and known works
+* Enable scalable, reusable stylistic analysis for art authentication
+
+---
+
+## Methodology
+
+### 🔍 Embedding Backbone
+
+* Use frozen CLIP or DINOv2 models to extract 512–1024D embeddings from image crops
+* These embeddings capture texture, edge, contrast, and brushstroke implicitly
+
+### 🧪 Contrastive Learning (Triplet or InfoNCE)
+
+* Train a small model to minimize distance between paintings by the same artist (positive pairs) and maximize distance from other artists (negative pairs)
+
+### 📥 Data Setup
+
+* \~10 high-resolution paintings per artist
+* Crop each painting into 3–5 regions with visible brush texture
+* Artists: Louis Ritman, José Velásquez, Jean Salabet, Michel Delacroix, etc.
+* Total: \~300–500 image crops
+
+### 🧠 Training Objective
+
+Use contrastive loss:
+
+* Anchor: A crop from one Ritman painting
+* Positive: A crop from a different Ritman painting
+* Negative: A crop from another artist
+
+Result: The model learns to embed brushstroke style in latent space
+
+---
+
+## Metrics & Evaluation
+
+| Metric                     | Description                                       |
+| -------------------------- | ------------------------------------------------- |
+| Cosine Similarity          | Between unknown painting and known artist cluster |
+| Clustering (t-SNE / PCA)   | Show embedding space groups per artist            |
+| ROC-AUC                    | Evaluate thresholding ability for artist match    |
+| Human Alignment (Optional) | Compare scores to expert similarity judgments     |
+
+---
+
+## Applications
+
+* **Art Authentication**: Detect stylistic consistency or outliers
+* **Forgery Detection**: Flag suspicious paintings based on brushstroke deviation
+* **Digital Humanities**: Stylometric analysis of under-studied artists
+* **Collector Tools**: Provide score-based confidence metrics
+
+---
+
+## Bonus Extensions
+
+* Train a second-layer MLP to output a \[0,1] similarity score
+* Apply model to new or unlabeled paintings for exploration
+* Add Grad-CAM or patch attention to visualize which regions drive style similarity
+
+---
+
+## Tools
+
+* Python, PyTorch
+* CLIP (OpenAI), DINOv2 (Meta)
+* Matplotlib, Seaborn for visualization
+
+---
+
+## Status
+
+✅ Idea finalized
+✅ Model design defined (Option 2: contrastive learning)
+🔜 Collect image crops & begin embedding + training phase
+
+---
+
+## Lead Author
+
+Ricardo Calix, 2025
+
+This project blends vision science, art authentication, and self-supervised learning for a practical, novel use case.
+
+---
+
+## Contact
+
+If you’d like to collaborate or share datasets, reach out at [rcalix@rcalix.com](mailto:rcalix@rcalix.com)
+
+
+
 ---
 
 11. Procedural Data Generation for Model Robustness
