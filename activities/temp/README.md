@@ -1,3 +1,34 @@
+
+# Selected Paper Projects ( WASP )
+
+## 1. Constraint-Based String Generation for Passwords and Crypto
+
+* 🔐 Password policy auditor + MD5 / Ethereum vanity address generator
+* Uses: Constraint-based latent optimization, no RNNs
+* Status: ✅ README created in canvas
+
+## 2. Physics-Aware Diffusion Denoising
+
+* 🌡️ Simulate noisy physics (e.g., heat equation), denoise with neural models
+* Compares CNN/U-Net vs traditional methods
+* Status: ✅ README created in canvas
+
+## 3. Brushstroke Embedding Similarity for Art Authentication
+
+* 🎨 Learn stylistic similarity across paintings using CLIP-like embeddings
+* Score unknown paintings against known examples
+* Status: ✅ README created in canvas
+
+## 4. Constraint-Based Dataset Generator (Non-Time Series)
+
+* 🧪 Generate synthetic tabular data from small real samples using constraints
+* Constraint satisfaction as the core metric
+* Dataset to be decided (not blast furnace)
+* Status: ✅ Concept approved — dataset TBD
+
+
+---
+
 1. "Optimization as Interface" — Interactive Constraint Solver
 Build a simple GUI or command-line tool where users type their output goals (e.g., “make it hotter but reduce emissions”), and the backend uses your neural constraint optimization model to update the inputs.
 Backend: Your constraint optimization code
