@@ -26,6 +26,14 @@
 * Dataset to be decided (not blast furnace)
 * Status: ✅ Concept approved — dataset TBD
 
+## 5. Semantic Surprise in GPT Outputs
+
+## Project Title
+**Measuring Semantic Surprise in GPT Outputs: Revisiting Entropy as a Signal for Meaning**
+
+## Overview
+This project extends the original work on Semantic Unexpectedness Score (SUS) from encoder-decoder Transformers to modern GPT-style decoder-only language models. The aim is to quantify the semantic richness of generated text using entropy-based measures — particularly, how *surprise* in generated tokens correlates with meaningful or interesting outputs. This work focuses exclusively on **English text generation**, not translation.
+
 
 ---
 
@@ -452,4 +460,84 @@ Use constraint optimization to generate Ethereum private keys whose public addre
     |-- optimizer.py
 |-- README.md
 ```
+---
+
+# Semantic Surprise in GPT Outputs
+
+## Project Title
+**Measuring Semantic Surprise in GPT Outputs: Revisiting Entropy as a Signal for Meaning**
+
+## Overview
+This project extends the original work on Semantic Unexpectedness Score (SUS) from encoder-decoder Transformers to modern GPT-style decoder-only language models. The aim is to quantify the semantic richness of generated text using entropy-based measures — particularly, how *surprise* in generated tokens correlates with meaningful or interesting outputs. This work focuses exclusively on **English text generation**, not translation.
+
+## Goals
+- Implement SUS using log-probabilities from GPT decoder outputs
+- Measure how SUS varies under different decoding strategies (e.g. greedy, top-k)
+- Analyze whether high-SUS outputs correlate with greater semantic richness
+- Provide a lightweight, publishable follow-up to the prior Transformer paper
+
+## Why It Matters
+- Surprise and entropy are central to cognitive science, yet underused in decoding
+- SUS can be used for ranking outputs, preference learning, or training rewards
+- This modernizes the original 2020s paper to align with current LLM practices
+
+## Method
+### 1. **Model**
+- Use GPT-2 small or Mistral 7B (quantized if needed)
+- Decoder-only architecture
+
+### 2. **Dataset**
+- Start with short English prompts from:
+  - XSum (BBC summaries)
+  - Reddit titles
+  - Wikipedia paragraphs
+- Generate 3–5 variations per prompt using different decoding strategies:
+  - Greedy
+  - Top-k (k=5, 10, 20)
+  - Nucleus (Top-p)
+
+### 3. **Semantic Unexpectedness Score (SUS)**
+- For each generated output:
+  - Extract logits → softmax → probabilities
+  - Compute:  
+    ```
+    SUS = (1/N) * sum_i -log(p(w_i))
+    ```
+  - Optionally normalize by `log(vocab_size)`
+
+### 4. **Evaluation**
+- Rank outputs by SUS
+- Human or heuristic labeling:
+  - Are high-SUS generations more semantically rich, surprising, or creative?
+- Optional: BLEU/ROUGE/Flesch readability for comparison
+
+### 5. **Deliverables**
+- Python notebook for SUS calculation
+- Table of prompt → outputs → SUS scores
+- Qualitative analysis of 10–20 high-SUS vs low-SUS examples
+
+## Key Claims
+- SUS provides a simple, entropy-based proxy for semantic novelty
+- High-SUS outputs are more likely to contain creative or meaningful content
+- SUS can be computed cheaply and used for ranking, filtering, or fine-tuning
+
+## Fast-Publication Targets
+- arXiv (preprint, citeable immediately)
+- IEEE Access (applied, fast decision)
+- ACL/NLP workshops (submission-ready by Fall 2025)
+- IJAIT (follow-up to previous paper)
+
+## Status
+- [ ] Dataset chosen
+- [ ] Model selected (GPT-2 or HF variant)
+- [ ] SUS code implemented
+- [ ] Outputs ranked and analyzed
+- [ ] Paper outline started
+
+---
+
+## Notes
+- This project is intended to be finished quickly, within ~4 weeks
+- Builds directly on the 2025 paper on unexpectedness
+- Will enable future work on SUS + DPO, decoding control, and generative preference modeling
 
