@@ -65,3 +65,50 @@ Show robustness gains
 ✅ Ties into game/graphics work if desired
 ✅ Can use Unity or Python simulation
 ✅ Publishable in data-centric AI venues
+
+---
+
+
+
+Paper Idea: “Neural Constraint-Based Password Auditor: A New Approach to Password Quality Enforcement”
+✅ Core Idea:
+Use a neural constraint optimization model to reverse-engineer plausible user passwords that satisfy common password rules — length, character mix, entropy — and show how bad policies can be gamed and how better constraints reduce guessability.
+🧠 Key Insight:
+Traditional password policies (e.g., “one uppercase, one number”) often produce predictable formats (e.g., Password1!)
+Your model treats the rules as constraints and generates passwords that meet them
+You measure how similar they are to real user-chosen passwords (e.g., leaked corp datasets or synthetically modeled ones)
+You show that policies which encourage low-entropy “rule-compliance” lead to more predictable passwords
+🧪 Method Steps:
+Constraint-based Input Optimization Model
+Inputs: latent seed vector
+Constraints: must match a policy (e.g., regex, entropy floor, char set rules)
+Output: synthetic password string that satisfies the constraints
+Similarity Evaluation
+Compare generated passwords to real-world datasets (e.g., RockYou, LinkedIn dumps)
+Use Levenshtein, character entropy, n-gram distribution, etc.
+Policy Weakness Audit
+Run your model with several common policies
+Show which ones produce most “guessable” passwords
+Recommend better constraint design
+📊 Experimental Setup:
+Use synthetic data OR public leaks (RockYou, etc.)
+Generate 10,000 passwords per policy
+Score each batch using:
+Entropy metrics
+Markov likelihood based on real password models
+Similarity to known leaks
+🧩 Publishable Contributions:
+First use of neural constraint optimization to generate passwords from policy rules
+Novel method to audit password policies from the inside-out
+Clear applied relevance + security implications
+Tiny dataset needed, easy to simulate everything
+🕒 Timeline:
+Task	Time
+Basic model reuse from your constraint code	1–2 days
+Write 3–5 policies (regex + entropy)	1 day
+Generate samples + metrics	2–3 days
+Visualize results, write paper	3–4 days
+📄 Possible Title Variants:
+“How Secure Is Your Password Policy? A Constraint-Based Auditor Reveals the Answer”
+“Neural Password Generator as Policy Critic: Constraint Optimization for Security”
+“Learning to Game the Rules: Password Guessability under Policy Constraints”
